@@ -1,0 +1,19 @@
+{
+  "generated_at_utc": "2026-03-03T23:40:19Z",
+  "sources": {
+    "responses_file": "data/latest/responses.jsonl",
+    "collection_stats_file": "data/latest/collection_stats.json",
+    "panel_summary_file": "data/latest/panel_summary.json",
+    "aggregate_summary_file": "data/latest/aggregate_summary.json",
+    "aggregate_rows_file": "data/latest/aggregate.jsonl"
+  },
+  "counts": {
+    "responses_rows": 4235,
+    "aggregate_rows": 4235
+  },
+  "exports": {
+    "leaderboard_csv": "data/latest/leaderboard.csv",
+    "leaderboard_with_launch_csv": "data/latest/leaderboard_with_launch.csv",
+    "model_launch_dates_csv": "data/latest/model_launch_dates.csv"
+  }
+}
