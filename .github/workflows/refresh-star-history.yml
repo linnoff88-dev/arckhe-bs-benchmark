@@ -1,4 +1,4 @@
-name: Atualizar Cache do Histórico de Estrelas
+﻿name: Atualizar Cache do HistÃ³rico de Estrelas
 
 on:
   schedule:
@@ -18,16 +18,16 @@ jobs:
       - name: Atualizar token de cache-bust
         run: |
           today="$(date -u +%Y%m%d)"
-          perl -0pi -e "s#(https://api\\.star-history\\.com/svg\\?repos=inematds/bs-benchmark&type=Date(?:&theme=dark)?)(?:&cachebust=\\d+)?#\$1&cachebust=$today#g" README.md
+          perl -0pi -e "s#(https://api\\.star-history\\.com/svg\\?repos=linnoff88-dev/bs-benchmark&type=Date(?:&theme=dark)?)(?:&cachebust=\\d+)?#\$1&cachebust=$today#g" README.md
 
-      - name: Fazer commit das alterações
+      - name: Fazer commit das alteraÃ§Ãµes
         run: |
           if git diff --quiet README.md; then
-            echo "Sem alterações."
+            echo "Sem alteraÃ§Ãµes."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add README.md
-          git commit -m "chore: atualizar cache do histórico de estrelas"
+          git commit -m "chore: atualizar cache do histÃ³rico de estrelas"
           git push

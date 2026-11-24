@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8">
@@ -921,9 +921,9 @@
         <img class="hero-logo" src="../docs/images/bsbench.png" alt="BullshitBench logo">
         <div>
           <h1 id="heroTitle">BullshitBench v2</h1>
-          <p class="hero-subtitle" id="heroSubtitle">Mede a capacidade dos modelos de detectar absurdos em 100 prompts absurdos com aparência plausível em software, medicina, jurídico, finanças e física.</p>
+          <p class="hero-subtitle" id="heroSubtitle">Mede a capacidade dos modelos de detectar absurdos em 100 prompts absurdos com aparÃªncia plausÃ­vel em software, medicina, jurÃ­dico, finanÃ§as e fÃ­sica.</p>
           <label class="hero-version-inline" for="benchmarkVersionSelect">
-            <select id="benchmarkVersionSelect" aria-label="Versão do benchmark">
+            <select id="benchmarkVersionSelect" aria-label="VersÃ£o do benchmark">
               <option value="v2">V2 (Novo)</option>
               <option value="v1">V1 (Original)</option>
             </select>
@@ -935,7 +935,7 @@
         <div class="hero-links">
           <a class="hero-link" href="https://x.com/petergostev" target="_blank" rel="noopener noreferrer">X</a>
           <a class="hero-link" href="https://www.linkedin.com/in/peter-gostev/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          <a class="hero-link" href="https://github.com/inematds/bs-benchmark" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a class="hero-link" href="https://github.com/linnoff88-dev/bs-benchmark" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
       </div>
     </header>
@@ -943,7 +943,7 @@
     <!-- Sticky Domain Scope -->
     <section class="domain-bar" id="domainBar">
       <div class="domain-bar-top">
-        <span class="domain-bar-label">Escopo por Domínio</span>
+        <span class="domain-bar-label">Escopo por DomÃ­nio</span>
         <div class="domain-bar-pills" id="domainBarPills"></div>
         <span class="domain-bar-sep"></span>
         <span class="filter-count" id="domainBarSummary">Geral</span>
@@ -955,13 +955,13 @@
           <div class="filters-grid">
             <label><span>Buscar</span><input id="filterQuery" type="text" placeholder="Modelo, id da pergunta, prompt..."></label>
             <label><span>Org</span><select id="filterOrg"></select></label>
-            <label><span>Raciocínio</span><select id="filterReasoning"></select></label>
-            <label><span>Técnica</span><select id="filterTechnique"></select></label>
+            <label><span>RaciocÃ­nio</span><select id="filterReasoning"></select></label>
+            <label><span>TÃ©cnica</span><select id="filterTechnique"></select></label>
             <select id="filterDifficulty" style="display:none;" aria-hidden="true" tabindex="-1"><option value="all">All</option></select>
             <select id="filterDomainGroup" style="display:none;" aria-hidden="true" tabindex="-1"></select>
           </div>
           <div class="judge-filter-row">
-            <span class="small-note">Juízes:</span>
+            <span class="small-note">JuÃ­zes:</span>
             <label class="judge-chip"><input type="checkbox" id="judge1Toggle" checked><span id="judge1Label">Carregando...</span></label>
             <label class="judge-chip"><input type="checkbox" id="judge2Toggle" checked><span id="judge2Label">Carregando...</span></label>
             <label class="judge-chip"><input type="checkbox" id="judge3Toggle" checked><span id="judge3Label">Carregando...</span></label>
@@ -995,11 +995,11 @@
     <section class="panel">
       <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:10px;margin-bottom:4px;">
         <div>
-          <h2 data-bench-heading="Detection Rate by Model" style="margin:0;">BullshitBench v2: Taxa de Detecção por Modelo</h2>
-          <p class="subtle" style="margin-top:2px;">Percentual de perguntas absurdas que cada modelo detectou (verde), desafiou parcialmente (âmbar) ou aceitou (vermelho).</p>
+          <h2 data-bench-heading="Detection Rate by Model" style="margin:0;">BullshitBench v2: Taxa de DetecÃ§Ã£o por Modelo</h2>
+          <p class="subtle" style="margin-top:2px;">Percentual de perguntas absurdas que cada modelo detectou (verde), desafiou parcialmente (Ã¢mbar) ou aceitou (vermelho).</p>
         </div>
         <div style="display:flex;gap:6px;flex-wrap:wrap;">
-          <span class="score-chip"><span class="dot score2"></span>Rejeição Clara</span>
+          <span class="score-chip"><span class="dot score2"></span>RejeiÃ§Ã£o Clara</span>
           <span class="score-chip"><span class="dot score1"></span>Desafio Parcial</span>
           <span class="score-chip"><span class="dot score0"></span>Absurdo Aceito</span>
         </div>
@@ -1008,12 +1008,12 @@
       <div id="orgGuide" style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;"></div>
       <div id="modelBars" style="display:grid;gap:6px;"></div>
       <div class="explainer-box">
-        <div class="explainer-title">O que este gráfico mostra?</div>
-        Imagine que você faz 100 perguntas absurdas para cada inteligência artificial — perguntas que parecem sérias mas na verdade não fazem sentido nenhum. Este gráfico mostra como cada IA reagiu:
+        <div class="explainer-title">O que este grÃ¡fico mostra?</div>
+        Imagine que vocÃª faz 100 perguntas absurdas para cada inteligÃªncia artificial â€” perguntas que parecem sÃ©rias mas na verdade nÃ£o fazem sentido nenhum. Este grÃ¡fico mostra como cada IA reagiu:
         <strong>Verde</strong> = a IA percebeu que era besteira e avisou claramente.
-        <strong>Âmbar</strong> = a IA desconfiou, mas mesmo assim tentou responder.
+        <strong>Ã‚mbar</strong> = a IA desconfiou, mas mesmo assim tentou responder.
         <strong>Vermelho</strong> = a IA acreditou no absurdo e respondeu como se fosse verdade.
-        Quanto mais verde, melhor — significa que a IA é mais difícil de enganar.
+        Quanto mais verde, melhor â€” significa que a IA Ã© mais difÃ­cil de enganar.
       </div>
     </section>
 
@@ -1031,79 +1031,79 @@
 
     <!-- Domain Performance Heatmap -->
     <section class="panel" id="domainHeatmapSection">
-      <h2 data-bench-heading="Detection Rate by Domain">BullshitBench v2: Taxa de Detecção por Domínio</h2>
-      <p class="subtle">Taxa verde (%) para cada modelo nos 5 grupos de domínio. Verde mais escuro = maior detecção. Clique em qualquer célula para ver respostas de exemplo.</p>
+      <h2 data-bench-heading="Detection Rate by Domain">BullshitBench v2: Taxa de DetecÃ§Ã£o por DomÃ­nio</h2>
+      <p class="subtle">Taxa verde (%) para cada modelo nos 5 grupos de domÃ­nio. Verde mais escuro = maior detecÃ§Ã£o. Clique em qualquer cÃ©lula para ver respostas de exemplo.</p>
       <div class="heatmap-wrap" style="max-height:520px;overflow:auto;">
         <table class="heatmap" id="domainHeatmap"></table>
       </div>
       <div id="domainDrilldown"></div>
       <div class="explainer-box">
-        <div class="explainer-title">O que este gráfico mostra?</div>
-        As perguntas absurdas foram divididas em 5 áreas de conhecimento: software, medicina, direito, finanças e física. Esta tabela mostra o desempenho de cada IA em cada área. Cores mais escuras significam que a IA se saiu melhor naquela área. Isso ajuda a entender se uma IA é boa em detectar besteiras em geral ou apenas em áreas específicas.
+        <div class="explainer-title">O que este grÃ¡fico mostra?</div>
+        As perguntas absurdas foram divididas em 5 Ã¡reas de conhecimento: software, medicina, direito, finanÃ§as e fÃ­sica. Esta tabela mostra o desempenho de cada IA em cada Ã¡rea. Cores mais escuras significam que a IA se saiu melhor naquela Ã¡rea. Isso ajuda a entender se uma IA Ã© boa em detectar besteiras em geral ou apenas em Ã¡reas especÃ­ficas.
       </div>
     </section>
 
     <section class="panel" id="domainInsightsSection">
-      <h2 data-bench-heading="Domain Landscape">BullshitBench v2: Panorama por Domínio</h2>
-      <p class="subtle">Mix de detecção por domínio para comparar o geral vs cada domínio de relance.</p>
+      <h2 data-bench-heading="Domain Landscape">BullshitBench v2: Panorama por DomÃ­nio</h2>
+      <p class="subtle">Mix de detecÃ§Ã£o por domÃ­nio para comparar o geral vs cada domÃ­nio de relance.</p>
       <div class="domain-insights-grid">
         <div class="domain-insight-card">
           <div class="domain-insight-head">
-            <h3>Detecção Média por Domínio</h3>
+            <h3>DetecÃ§Ã£o MÃ©dia por DomÃ­nio</h3>
           </div>
           <div id="domainAvgBars" class="domain-avg-bars"></div>
         </div>
       </div>
       <div class="explainer-box">
-        <div class="explainer-title">O que este gráfico mostra?</div>
-        Aqui você vê a média de acerto de todas as IAs em cada área de conhecimento. Isso revela quais áreas são mais fáceis ou mais difíceis de enganar as IAs. Por exemplo, se a barra de "física" é mais baixa, significa que as IAs têm mais dificuldade em perceber absurdos nessa área.
+        <div class="explainer-title">O que este grÃ¡fico mostra?</div>
+        Aqui vocÃª vÃª a mÃ©dia de acerto de todas as IAs em cada Ã¡rea de conhecimento. Isso revela quais Ã¡reas sÃ£o mais fÃ¡ceis ou mais difÃ­ceis de enganar as IAs. Por exemplo, se a barra de "fÃ­sica" Ã© mais baixa, significa que as IAs tÃªm mais dificuldade em perceber absurdos nessa Ã¡rea.
       </div>
     </section>
 
     <!-- Release Date vs Green Score: All Orgs -->
     <section class="panel">
-      <h2 data-bench-heading="Detection Rate Over Time">BullshitBench v2: Taxa de Detecção ao Longo do Tempo</h2>
-      <p class="subtle">Data de lançamento vs. taxa verde (% de rejeição clara) para todas as organizações. Melhor modelo por janela de lançamento exibido.</p>
+      <h2 data-bench-heading="Detection Rate Over Time">BullshitBench v2: Taxa de DetecÃ§Ã£o ao Longo do Tempo</h2>
+      <p class="subtle">Data de lanÃ§amento vs. taxa verde (% de rejeiÃ§Ã£o clara) para todas as organizaÃ§Ãµes. Melhor modelo por janela de lanÃ§amento exibido.</p>
       <div class="launch-controls">
         <label class="launch-toggle">
           <input type="checkbox" id="launchBestOnlyToggle" checked>
-          <span>Apenas melhores por janela de lançamento</span>
+          <span>Apenas melhores por janela de lanÃ§amento</span>
         </label>
       </div>
       <svg id="launchAllOrgs" class="scatter-svg" viewBox="0 0 1200 480" role="img"></svg>
       <p id="launchAllMeta" class="small-note"></p>
       <div class="explainer-box">
-        <div class="explainer-title">O que este gráfico mostra?</div>
-        Este gráfico mostra a evolução ao longo do tempo. Cada ponto representa uma IA, posicionada pela data em que foi lançada (eixo horizontal) e pela sua taxa de acerto (eixo vertical). As linhas conectam os modelos de cada empresa (Anthropic, OpenAI, Google, etc.). Se a linha sobe, significa que os modelos mais novos daquela empresa estão ficando melhores em detectar absurdos.
+        <div class="explainer-title">O que este grÃ¡fico mostra?</div>
+        Este grÃ¡fico mostra a evoluÃ§Ã£o ao longo do tempo. Cada ponto representa uma IA, posicionada pela data em que foi lanÃ§ada (eixo horizontal) e pela sua taxa de acerto (eixo vertical). As linhas conectam os modelos de cada empresa (Anthropic, OpenAI, Google, etc.). Se a linha sobe, significa que os modelos mais novos daquela empresa estÃ£o ficando melhores em detectar absurdos.
       </div>
     </section>
 
     <!-- 2x2 Chart Grid -->
     <div class="two-col">
       <section class="panel">
-        <h2 data-bench-heading="Do Newer Models Perform Better?">BullshitBench v2: Modelos Mais Novos Têm Desempenho Melhor?</h2>
-        <p class="subtle">Todos os modelos testados plotados por data de lançamento vs. taxa verde.</p>
+        <h2 data-bench-heading="Do Newer Models Perform Better?">BullshitBench v2: Modelos Mais Novos TÃªm Desempenho Melhor?</h2>
+        <p class="subtle">Todos os modelos testados plotados por data de lanÃ§amento vs. taxa verde.</p>
         <div class="chart-legend" id="allModelsLegend"></div>
         <svg id="allModelsScatter" class="scatter-svg" viewBox="0 0 600 420"></svg>
         <div class="explainer-box">
-          <div class="explainer-title">O que este gráfico mostra?</div>
-          Será que IAs mais novas são realmente mais inteligentes? Este gráfico coloca todas as IAs testadas num plano: quanto mais à direita, mais recente é a IA; quanto mais acima, melhor ela detecta besteiras. Se os pontos sobem conforme vão para a direita, sim — as IAs mais novas estão melhorando.
+          <div class="explainer-title">O que este grÃ¡fico mostra?</div>
+          SerÃ¡ que IAs mais novas sÃ£o realmente mais inteligentes? Este grÃ¡fico coloca todas as IAs testadas num plano: quanto mais Ã  direita, mais recente Ã© a IA; quanto mais acima, melhor ela detecta besteiras. Se os pontos sobem conforme vÃ£o para a direita, sim â€” as IAs mais novas estÃ£o melhorando.
         </div>
       </section>
       <section class="panel">
         <div class="reasoning-panel-head">
           <h2 id="reasoningScatterTitle" data-bench-heading="Does Thinking Harder Help?">BullshitBench v2: Pensar Mais Ajuda?</h2>
-          <div class="reasoning-mode-switch" role="group" aria-label="Modo do gráfico de raciocínio">
+          <div class="reasoning-mode-switch" role="group" aria-label="Modo do grÃ¡fico de raciocÃ­nio">
             <button type="button" class="reasoning-mode-btn is-active" data-reasoning-mode="tokens">Tokens</button>
             <button type="button" class="reasoning-mode-btn" data-reasoning-mode="cost">Custo</button>
           </div>
         </div>
-        <p class="subtle" id="reasoningScatterSubtitle">Média de tokens de raciocínio usados vs. taxa verde. Mais tokens de raciocínio = modelo "pensando mais".</p>
+        <p class="subtle" id="reasoningScatterSubtitle">MÃ©dia de tokens de raciocÃ­nio usados vs. taxa verde. Mais tokens de raciocÃ­nio = modelo "pensando mais".</p>
         <div class="chart-legend" id="reasoningScatterLegend"></div>
         <svg id="reasoningScatter" class="scatter-svg" viewBox="0 0 600 420"></svg>
         <div class="explainer-box">
-          <div class="explainer-title">O que este gráfico mostra?</div>
-          Algumas IAs podem "pensar mais" antes de responder, usando mais processamento (tokens de raciocínio) ou mais dinheiro (custo). Este gráfico mostra se gastar mais com "pensamento" realmente ajuda a detectar absurdos. Se os pontos mais à direita (que pensam mais) também estão mais acima (acertam mais), então sim — pensar mais ajuda.
+          <div class="explainer-title">O que este grÃ¡fico mostra?</div>
+          Algumas IAs podem "pensar mais" antes de responder, usando mais processamento (tokens de raciocÃ­nio) ou mais dinheiro (custo). Este grÃ¡fico mostra se gastar mais com "pensamento" realmente ajuda a detectar absurdos. Se os pontos mais Ã  direita (que pensam mais) tambÃ©m estÃ£o mais acima (acertam mais), entÃ£o sim â€” pensar mais ajuda.
         </div>
       </section>
     </div>
@@ -1113,8 +1113,8 @@
       <h2 data-bench-heading="Leaderboard">BullshitBench v2: Ranking</h2>
       <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;" id="orgColorKey"></div>
       <div class="explainer-box">
-        <div class="explainer-title">O que é este ranking?</div>
-        Esta tabela classifica todas as IAs testadas da melhor para a pior. A coluna <strong>Verde %</strong> é a mais importante: mostra a porcentagem de vezes que a IA percebeu o absurdo. Você também pode ver o custo médio por resposta e quantos tokens de raciocínio cada IA usou. Clique nos cabeçalhos das colunas para reordenar.
+        <div class="explainer-title">O que Ã© este ranking?</div>
+        Esta tabela classifica todas as IAs testadas da melhor para a pior. A coluna <strong>Verde %</strong> Ã© a mais importante: mostra a porcentagem de vezes que a IA percebeu o absurdo. VocÃª tambÃ©m pode ver o custo mÃ©dio por resposta e quantos tokens de raciocÃ­nio cada IA usou. Clique nos cabeÃ§alhos das colunas para reordenar.
       </div>
       <div class="table-wrap" style="max-height:600px;">
         <table>
@@ -1123,13 +1123,13 @@
               <th class="sortable" data-key="rank">Pos. <span class="sort-ind" data-ind="rank"></span></th>
               <th class="sortable" data-key="model">Modelo <span class="sort-ind" data-ind="model"></span></th>
               <th class="sortable" data-key="org">Org <span class="sort-ind" data-ind="org"></span></th>
-              <th class="sortable" data-key="reasoning">Raciocínio <span class="sort-ind" data-ind="reasoning"></span></th>
+              <th class="sortable" data-key="reasoning">RaciocÃ­nio <span class="sort-ind" data-ind="reasoning"></span></th>
               <th class="sortable" data-key="greenRate">Verde % <span class="sort-ind" data-ind="greenRate"></span></th>
-              <th class="sortable" data-key="amberRate">Âmbar % <span class="sort-ind" data-ind="amberRate"></span></th>
+              <th class="sortable" data-key="amberRate">Ã‚mbar % <span class="sort-ind" data-ind="amberRate"></span></th>
               <th class="sortable" data-key="redRate">Vermelho % <span class="sort-ind" data-ind="redRate"></span></th>
               <th>Mix</th>
-              <th class="sortable" data-key="avgTokens">Tokens Médios <span class="sort-ind" data-ind="avgTokens"></span></th>
-              <th class="sortable" data-key="avgCost">Custo Médio <span class="sort-ind" data-ind="avgCost"></span></th>
+              <th class="sortable" data-key="avgTokens">Tokens MÃ©dios <span class="sort-ind" data-ind="avgTokens"></span></th>
+              <th class="sortable" data-key="avgCost">Custo MÃ©dio <span class="sort-ind" data-ind="avgCost"></span></th>
               <th class="sortable" data-key="rows">Linhas <span class="sort-ind" data-ind="rows"></span></th>
             </tr>
           </thead>
@@ -1140,12 +1140,12 @@
 
     <!-- Technique Performance (deep-dive) -->
     <section class="panel" id="techniqueSection">
-      <h2 data-bench-heading="Detection Rate by Technique">BullshitBench v2: Taxa de Detecção por Técnica</h2>
-      <p class="subtle">Taxa média de detecção em todos os modelos para cada técnica BS. Menor = mais difícil para os modelos detectarem.</p>
+      <h2 data-bench-heading="Detection Rate by Technique">BullshitBench v2: Taxa de DetecÃ§Ã£o por TÃ©cnica</h2>
+      <p class="subtle">Taxa mÃ©dia de detecÃ§Ã£o em todos os modelos para cada tÃ©cnica BS. Menor = mais difÃ­cil para os modelos detectarem.</p>
       <div id="techniqueChart" style="display:grid;gap:6px;"></div>
       <div class="explainer-box">
-        <div class="explainer-title">O que este gráfico mostra?</div>
-        Existem diferentes formas de criar uma pergunta absurda — por exemplo, inventar um framework que não existe, aplicar conceitos de uma área em outra, ou usar jargão sem sentido. Este gráfico mostra quais técnicas de engano são mais eficazes contra as IAs. Barras menores significam que aquela técnica engana mais as IAs.
+        <div class="explainer-title">O que este grÃ¡fico mostra?</div>
+        Existem diferentes formas de criar uma pergunta absurda â€” por exemplo, inventar um framework que nÃ£o existe, aplicar conceitos de uma Ã¡rea em outra, ou usar jargÃ£o sem sentido. Este grÃ¡fico mostra quais tÃ©cnicas de engano sÃ£o mais eficazes contra as IAs. Barras menores significam que aquela tÃ©cnica engana mais as IAs.
       </div>
     </section>
 
@@ -1164,9 +1164,9 @@
         </label>
       </div>
       <div class="button-row" style="margin-bottom:12px;">
-        <button type="button" id="randomBtn">Verde vs Vermelho Aleatório</button>
-        <button type="button" id="randomBestBtn" class="alt">Melhor Pergunta Aleatória</button>
-        <button type="button" id="randomWorstBtn" class="alt">Pior Pergunta Aleatória</button>
+        <button type="button" id="randomBtn">Verde vs Vermelho AleatÃ³rio</button>
+        <button type="button" id="randomBestBtn" class="alt">Melhor Pergunta AleatÃ³ria</button>
+        <button type="button" id="randomWorstBtn" class="alt">Pior Pergunta AleatÃ³ria</button>
       </div>
       <div id="questionCtx" class="question-context"></div>
       <div id="pairGrid" class="ab-grid">
@@ -1186,7 +1186,7 @@ const BENCHMARK_CONFIGS = {
     displayLabel: "V2 (Novo)",
     heroTitle: "BullshitBench v2",
     heroSubtitle:
-      "Mede a capacidade dos modelos de detectar absurdos em 100 prompts absurdos com aparência plausível em software, medicina, jurídico, finanças e física.",
+      "Mede a capacidade dos modelos de detectar absurdos em 100 prompts absurdos com aparÃªncia plausÃ­vel em software, medicina, jurÃ­dico, finanÃ§as e fÃ­sica.",
     loadingLabel: "v2",
     titlePrefix: "BullshitBench v2",
     questionsPaths: ["../questions.v2.json"],
@@ -1211,7 +1211,7 @@ const BENCHMARK_CONFIGS = {
     displayLabel: "V1 (Original)",
     heroTitle: "BullshitBench v1",
     heroSubtitle:
-      "Lançamento original do BullshitBench usando o dataset e conjunto de perguntas v1.",
+      "LanÃ§amento original do BullshitBench usando o dataset e conjunto de perguntas v1.",
     loadingLabel: "v1",
     titlePrefix: "BullshitBench v1",
     questionsPaths: ["../questions.json"],
@@ -1251,7 +1251,7 @@ function setBenchmarkInUrl(nextVersion) {
 
 const CATEGORY_META = {
   green:  { label: "Verde",  colorClass: "score2", short: "Verde" },
-  amber:  { label: "Âmbar",  colorClass: "score1", short: "Âmbar" },
+  amber:  { label: "Ã‚mbar",  colorClass: "score1", short: "Ã‚mbar" },
   red:    { label: "Vermelho",    colorClass: "score0", short: "Vermelho" },
   error:  { label: "Erro",  colorClass: "error",  short: "Erro" },
 };
@@ -1272,38 +1272,38 @@ const ORG_NAMES = {
   "prime-intellect": "Prime Intellect", "z-ai": "Z.AI",
 };
 const DOMAIN_GROUP_LABELS = {
-  legal: "Jurídico", medical: "Medicina", software: "Software", finance: "Finanças", physics: "Física",
+  legal: "JurÃ­dico", medical: "Medicina", software: "Software", finance: "FinanÃ§as", physics: "FÃ­sica",
 };
 const DOMAIN_FILTER_ORDER = ["software", "finance", "legal", "medical", "physics"];
 const DIFFICULTY_LABELS = {
-  L1: "L1 \u2014 Sopa de Jargão", L2: "L2 \u2014 Relação Errada", L3: "L3 \u2014 Violação Sutil de Premissa",
-  pnf: "Framework Plausível Inexistente", mm: "Mecanismo Mal Aplicado",
+  L1: "L1 \u2014 Sopa de JargÃ£o", L2: "L2 \u2014 RelaÃ§Ã£o Errada", L3: "L3 \u2014 ViolaÃ§Ã£o Sutil de Premissa",
+  pnf: "Framework PlausÃ­vel Inexistente", mm: "Mecanismo Mal Aplicado",
   af: "Enquadramento Autoritativo", fg: "Falsa Granularidade",
-  wua: "Unidade de Análise Errada", tce: "Erro de Categoria Temporal",
-  rm: "Metáfora Reificada", cds: "Costura Entre Domínios",
+  wua: "Unidade de AnÃ¡lise Errada", tce: "Erro de Categoria Temporal",
+  rm: "MetÃ¡fora Reificada", cds: "Costura Entre DomÃ­nios",
   st: "Armadilha de Especificidade", fa: "Autoridade Fabricada",
-  scf: "Enquadramento de Custo Afundado", ce: "Extrapolação Confiante", nn: "Absurdo Aninhado",
+  scf: "Enquadramento de Custo Afundado", ce: "ExtrapolaÃ§Ã£o Confiante", nn: "Absurdo Aninhado",
 };
 const TECHNIQUE_LABELS = {
   authoritative_framing_of_nothing: "Enquadramento de Absurdo Confiante",
   causal_chimera: "Mistura Falsa de Causa e Efeito",
-  cross_domain_concept_stitching: "Costura de Conceitos Entre Domínios",
-  inverted_nonexistent_dependency: "Inversão de Dependência Inventada",
-  jargon_soup: "Sopa de Jargão",
-  wrong_relationship: "Relação Errada",
-  subtle_premise_violation: "Violação Sutil de Premissa",
-  plausible_nonexistent_framework: "Framework Plausível Inexistente",
+  cross_domain_concept_stitching: "Costura de Conceitos Entre DomÃ­nios",
+  inverted_nonexistent_dependency: "InversÃ£o de DependÃªncia Inventada",
+  jargon_soup: "Sopa de JargÃ£o",
+  wrong_relationship: "RelaÃ§Ã£o Errada",
+  subtle_premise_violation: "ViolaÃ§Ã£o Sutil de Premissa",
+  plausible_nonexistent_framework: "Framework PlausÃ­vel Inexistente",
   misapplied_mechanism: "Mecanismo Mal Aplicado",
   authoritative_framing: "Enquadramento Autoritativo",
   false_granularity: "Falsa Granularidade",
-  wrong_unit_of_analysis: "Unidade de Análise Errada",
+  wrong_unit_of_analysis: "Unidade de AnÃ¡lise Errada",
   temporal_category_error: "Erro de Categoria Temporal",
-  reified_metaphor: "Metáfora Reificada",
-  cross_domain_stitching: "Costura Entre Domínios",
+  reified_metaphor: "MetÃ¡fora Reificada",
+  cross_domain_stitching: "Costura Entre DomÃ­nios",
   specificity_trap: "Armadilha de Especificidade",
   fabricated_authority: "Autoridade Fabricada",
   sunk_cost_framing: "Enquadramento de Custo Afundado",
-  confident_extrapolation: "Extrapolação Confiante",
+  confident_extrapolation: "ExtrapolaÃ§Ã£o Confiante",
   nested_nonsense: "Absurdo Aninhado",
 };
 // ====== STATE ======
@@ -1914,7 +1914,7 @@ function renderDomainBar() {
 
   const label = domainFilterLabel(selected);
   const rowCount = selected === "all" ? counts.all : (counts[selected] || 0);
-  summary.textContent = `${label} · ${fmtNum(rowCount)} rows`;
+  summary.textContent = `${label} Â· ${fmtNum(rowCount)} rows`;
 }
 
 // ====== JUDGE FILTERS ======
@@ -1966,7 +1966,7 @@ function refreshTopVariantToggle() {
   const btn = document.getElementById("topVariantsToggleBtn");
   if (!btn) return;
   const on = !!S.topVariantsOnly;
-  btn.textContent = on ? "Melhores por série" : "Todas as variantes";
+  btn.textContent = on ? "Melhores por sÃ©rie" : "Todas as variantes";
   btn.classList.toggle("active", on);
   btn.setAttribute("aria-pressed", on ? "true" : "false");
 }
@@ -2318,11 +2318,11 @@ function renderTechniqueChart(filtered) {
       let respHtml = "";
       if (greenEx) {
         const respText = (greenEx.response_text||"").slice(0,400);
-        respHtml += `<div style="margin-top:4px;"><span class="pill score2" style="margin-bottom:3px;">Green</span> <span style="font-size:0.74rem;color:#506660;">${esc(prettyModel(greenEx))} · ${esc(orgName(modelOrg(greenEx)))}</span><p class="tech-example-resp">${esc(respText)}${greenEx.response_text.length>400?"...":""}</p></div>`;
+        respHtml += `<div style="margin-top:4px;"><span class="pill score2" style="margin-bottom:3px;">Green</span> <span style="font-size:0.74rem;color:#506660;">${esc(prettyModel(greenEx))} Â· ${esc(orgName(modelOrg(greenEx)))}</span><p class="tech-example-resp">${esc(respText)}${greenEx.response_text.length>400?"...":""}</p></div>`;
       }
       if (redEx) {
         const respText = (redEx.response_text||"").slice(0,400);
-        respHtml += `<div style="margin-top:4px;"><span class="pill score0" style="margin-bottom:3px;">Red</span> <span style="font-size:0.74rem;color:#506660;">${esc(prettyModel(redEx))} · ${esc(orgName(modelOrg(redEx)))}</span><p class="tech-example-resp">${esc(respText)}${redEx.response_text.length>400?"...":""}</p></div>`;
+        respHtml += `<div style="margin-top:4px;"><span class="pill score0" style="margin-bottom:3px;">Red</span> <span style="font-size:0.74rem;color:#506660;">${esc(prettyModel(redEx))} Â· ${esc(orgName(modelOrg(redEx)))}</span><p class="tech-example-resp">${esc(respText)}${redEx.response_text.length>400?"...":""}</p></div>`;
       }
       return `<div class="tech-example-item"><p class="tech-example-q">${esc(qid)}: ${esc(question.length>120?question.slice(0,120)+"...":question)}</p>${respHtml}</div>`;
     }).join("");
@@ -2332,7 +2332,7 @@ function renderTechniqueChart(filtered) {
         <div style="font-size:0.82rem;color:#22312c;text-align:right;">${esc(e.label)}</div>
         <div class="diff-bar"><span style="width:${e.greenRate.toFixed(1)}%;background:${barColor};"></span></div>
         <div class="diff-bar-val">${fmtPct(e.greenRate)}</div>
-        <div class="tech-expand-hint"><span class="tech-expand-chevron">▸</span><span class="tech-expand-text">Mostrar exemplos</span></div>
+        <div class="tech-expand-hint"><span class="tech-expand-chevron">â–¸</span><span class="tech-expand-text">Mostrar exemplos</span></div>
       </div>
       <div class="tech-examples" id="techEx_${esc(e.tech)}" aria-hidden="true">
         <p style="font-size:0.78rem;color:#506660;margin:0 0 6px;">Example questions from <strong>${esc(e.label)}</strong>:</p>
@@ -2520,7 +2520,7 @@ function placeLabelsGreedy(points, opts = {}) {
         return;
       }
     }
-    // Could not place — skip (dot still visible, tooltip on hover)
+    // Could not place â€” skip (dot still visible, tooltip on hover)
   });
   return result;
 }
@@ -2743,7 +2743,7 @@ function renderAllModelsScatter(filtered) {
   }).join("");
 
   svg.innerHTML = `${gridY}${gridX}${trendHtml}${dots}${labelHalo}${labelsHtml}
-    <text x="${ml+pw/2}" y="${H-8}" text-anchor="middle" fill="#425851" font-size="12">Data de Lançamento</text>
+    <text x="${ml+pw/2}" y="${H-8}" text-anchor="middle" fill="#425851" font-size="12">Data de LanÃ§amento</text>
     <text x="14" y="${mt+ph/2}" transform="rotate(-90,14,${mt+ph/2})" text-anchor="middle" fill="#425851" font-size="12">Taxa Verde (%)</text>`;
 
   setupScatterTooltips(svg, points, "_cx", "_cy", p => {
@@ -2936,7 +2936,7 @@ function renderLaunchAllOrgs(filtered) {
   points.forEach(p => { p._cx = xFor(p.launchDate.getTime()); p._cy = yFor(p.greenRate); });
   const dots = points.map(p => `<circle cx="${p._cx.toFixed(1)}" cy="${p._cy.toFixed(1)}" r="5" fill="${orgColor(p.org)}" fill-opacity="0.9" stroke="#fff" stroke-width="1.2"/>`).join("");
 
-  // Label placement — exclude the last point per org (already labeled at line end)
+  // Label placement â€” exclude the last point per org (already labeled at line end)
   const lastPtSet = new Set([...lastPointPerOrg.values()]);
   const labelPoints = points.filter(p => !lastPtSet.has(p)).map(p => ({ ...p, label: launchChartModelLabel(p.label) }));
   const labelPlacements = placeLabelsGreedy(labelPoints, {
@@ -2948,7 +2948,7 @@ function renderLaunchAllOrgs(filtered) {
   }).join("");
 
   svg.innerHTML = `${gridY}${gridX}${lines}${dots}${labelsHtml}${orgEndLabels}
-    <text x="${ml+pw/2}" y="${H-10}" text-anchor="middle" fill="#425851" font-size="12">Data de Lançamento</text>
+    <text x="${ml+pw/2}" y="${H-10}" text-anchor="middle" fill="#425851" font-size="12">Data de LanÃ§amento</text>
     <text x="14" y="${mt+ph/2}" transform="rotate(-90,14,${mt+ph/2})" text-anchor="middle" fill="#425851" font-size="12">Taxa Verde (%)</text>`;
 
   setupScatterTooltips(svg, points, "_cx", "_cy", p => {
@@ -2968,19 +2968,19 @@ function renderReasoningScatter(filtered) {
   const modeCfg = mode === "cost"
     ? {
         headingSuffix: "Custo Mais Alto Ajuda?",
-        subtitle: "Custo médio por resposta vs. taxa verde. Custo mais alto pode refletir mais computação e raciocínio mais longo.",
+        subtitle: "Custo mÃ©dio por resposta vs. taxa verde. Custo mais alto pode refletir mais computaÃ§Ã£o e raciocÃ­nio mais longo.",
         metricKey: "avgCost",
-        xAxisLabel: "Custo Médio por Resposta (USD)",
-        tooltipLabel: "Custo Médio",
-        emptyText: "Sem dados de custo disponíveis para os filtros atuais.",
+        xAxisLabel: "Custo MÃ©dio por Resposta (USD)",
+        tooltipLabel: "Custo MÃ©dio",
+        emptyText: "Sem dados de custo disponÃ­veis para os filtros atuais.",
       }
     : {
         headingSuffix: "Pensar Mais Ajuda?",
-        subtitle: 'Média de tokens de raciocínio usados vs. taxa verde. Mais tokens de raciocínio = modelo "pensando mais".',
+        subtitle: 'MÃ©dia de tokens de raciocÃ­nio usados vs. taxa verde. Mais tokens de raciocÃ­nio = modelo "pensando mais".',
         metricKey: "avgReasoning",
-        xAxisLabel: "Média de Tokens de Raciocínio por Resposta",
-        tooltipLabel: "Tokens de Raciocínio Médios",
-        emptyText: "Sem dados de tokens de raciocínio disponíveis para os filtros atuais.",
+        xAxisLabel: "MÃ©dia de Tokens de RaciocÃ­nio por Resposta",
+        tooltipLabel: "Tokens de RaciocÃ­nio MÃ©dios",
+        emptyText: "Sem dados de tokens de raciocÃ­nio disponÃ­veis para os filtros atuais.",
       };
   const metricKey = modeCfg.metricKey;
   const fmtUsd = v => {
@@ -3288,7 +3288,7 @@ function renderAll() {
   S.filteredRows = filtered;
   if (cfg.showDomainGroup) renderDomainBar();
   const el = document.getElementById("dataState");
-  const variantNote = S.topVariantsOnly ? " · top variants only" : "";
+  const variantNote = S.topVariantsOnly ? " Â· top variants only" : "";
   el.textContent = `Showing ${filtered.length} of ${S.rows.length} rows${variantNote}.`;
   refreshTopVariantToggle();
   renderKpis(filtered);

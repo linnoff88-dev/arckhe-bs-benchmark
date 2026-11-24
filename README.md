@@ -5,7 +5,7 @@
 
 O BullshitBench mede se os modelos de inteligÃªncia artificial detectam absurdos, os apontam claramente e evitam continuar com confianÃ§a em premissas invÃ¡lidas.
 
-- Visualizador pÃºblico (mais recente): https://inematds.github.io/bs-benchmark/viewer/index.v2.html
+- Visualizador pÃºblico (mais recente): https://linnoff88-dev.github.io/
 - Atualizado em: 2026-03-04
 
 ## O Que Ã© "Absurdo" Neste Contexto?
@@ -118,7 +118,7 @@ export OPENROUTER_API_KEY=sua_chave_aqui
 
 5. Abra o visualizador:
 
-- Visualizador publicado (mais recente): https://inematds.github.io/bs-benchmark/viewer/index.v2.html
+- Visualizador publicado (mais recente): https://linnoff88-dev.github.io/
 - Visualizador local (opcional):
 
 ```bash
@@ -153,9 +153,9 @@ Use o dropdown `VersÃ£o do Benchmark` no painel de filtros para alternar entre
 ## HistÃ³rico de Estrelas
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=inematds/bs-benchmark&type=Date&theme=dark&cachebust=20261118" />
-  <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=inematds/bs-benchmark&type=Date&cachebust=20261118" />
-  <img alt="GrÃ¡fico de HistÃ³rico de Estrelas" src="https://api.star-history.com/svg?repos=inematds/bs-benchmark&type=Date&cachebust=20261118" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=linnoff88-dev/bs-benchmark&type=Date&theme=dark&cachebust=20261118" />
+  <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=linnoff88-dev/bs-benchmark&type=Date&cachebust=20261118" />
+  <img alt="GrÃ¡fico de HistÃ³rico de Estrelas" src="https://api.star-history.com/svg?repos=linnoff88-dev/bs-benchmark&type=Date&cachebust=20261118" />
 </picture>
 
 ---
