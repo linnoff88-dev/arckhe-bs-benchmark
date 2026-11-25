@@ -1454,7 +1454,7 @@
       <h2>BullshitBench: Filtros</h2>
       <div class="grid-3 filters-grid">
         <label>
-          <span>Versão do Benchmark</span>
+          <span>Versêo do Benchmark</span>
           <select id="datasetVersion"></select>
         </label>
         <label>
@@ -1521,7 +1521,7 @@
       <div class="chart-head">
         <h2>BullshitBench: Modelos Respondendo Perguntas Absurdas</h2>
         <div class="chart-legend" aria-label="Model detection legend">
-          <span class="chart-legend-item"><span class="dot score2"></span>Rejeição Clara</span>
+          <span class="chart-legend-item"><span class="dot score2"></span>Rejeiçêo Clara</span>
           <span class="chart-legend-item"><span class="dot score1"></span>Desafio Parcial</span>
           <span class="chart-legend-item"><span class="dot score0"></span>Absurdo Aceito</span>
         </div>
@@ -1536,14 +1536,14 @@
           <h2 id="chartDrilldownTitle">BullshitBench: Segmento Selecionado</h2>
           <p class="small-note" id="chartDrilldownMeta"></p>
         </div>
-        <button type="button" id="clearChartDrilldownBtn" class="alt">Limpar Seleção</button>
+        <button type="button" id="clearChartDrilldownBtn" class="alt">Limpar Seleçêo</button>
       </div>
       <div id="chartDrilldownBody" class="drilldown-list"></div>
     </section>
 
     <section class="panel">
       <h2>BullshitBench: Como os modelos melhoraram?</h2>
-      <p class="small-note">Rastreando melhorias de desempenho (% de rejeição clara) com lançamentos de modelos.</p>
+      <p class="small-note">Rastreando melhorias de desempenho (% de rejeiçêo clara) com lançamentos de modelos.</p>
       <div class="launch-controls">
         <label class="launch-toggle">
           <input type="checkbox" id="launchBestOnlyToggle" checked>
@@ -1689,15 +1689,15 @@
       authoritative_framing_of_nothing: "Enquadramento de Absurdo Confiante",
       causal_chimera: "Mistura Falsa de Causa e Efeito",
       cross_domain_concept_stitching: "Costura de Conceitos Entre Domínios",
-      false_granularity: "Falsa Precisão",
-      inverted_nonexistent_dependency: "Inversão de Dependência Inventada",
-      jargon_soup: "Sopa de Jargão",
+      false_granularity: "Falsa Precisêo",
+      inverted_nonexistent_dependency: "Inversêo de Dependência Inventada",
+      jargon_soup: "Sopa de Jargêo",
       misapplied_mechanism: "Mecanismo Mal Aplicado",
       plausible_nonexistent_framework: "Framework Plausível mas Falso",
       reified_metaphor: "Metáfora Literalizada",
-      subtle_premise_violation: "Violação Sutil de Premissa",
-      temporal_category_error: "Confusão de Tempo/Categoria",
-      wrong_relationship: "Relação Errada",
+      subtle_premise_violation: "Violaçêo Sutil de Premissa",
+      temporal_category_error: "Confusêo de Tempo/Categoria",
+      wrong_relationship: "Relaçêo Errada",
       wrong_unit_of_analysis: "Unidade de Análise Errada",
     };
     const state = {
@@ -3856,10 +3856,10 @@
         ${circles}
         ${orgLineLabels}
         <text x="${(margin.left + plotWidth / 2).toFixed(2)}" y="${(height - 14).toFixed(2)}" text-anchor="middle" fill="#425851" font-size="${axisFontSize.toFixed(1)}">Model Launch Date</text>
-        <text x="16" y="${(margin.top + plotHeight / 2).toFixed(2)}" transform="rotate(-90,16,${(margin.top + plotHeight / 2).toFixed(2)})" text-anchor="middle" fill="#425851" font-size="${axisFontSize.toFixed(1)}">% Rejeição Clara (Verde)</text>
+        <text x="16" y="${(margin.top + plotHeight / 2).toFixed(2)}" transform="rotate(-90,16,${(margin.top + plotHeight / 2).toFixed(2)})" text-anchor="middle" fill="#425851" font-size="${axisFontSize.toFixed(1)}">% Rejeiçêo Clara (Verde)</text>
       `;
 
-      el.launchScatterMeta.textContent = "Nota: Percentual de vezes que o modelo pontuou 'Verde' (rejeitou claramente). Melhor pontuação apenas se múltiplos modelos do mesmo lançamento foram testados (ex.: múltiplos níveis de raciocínio).";
+      el.launchScatterMeta.textContent = "Nota: Percentual de vezes que o modelo pontuou 'Verde' (rejeitou claramente). Melhor pontuaçêo apenas se múltiplos modelos do mesmo lançamento foram testados (ex.: múltiplos níveis de raciocínio).";
     }
 
     function renderChartDrilldown(filteredRows) {
